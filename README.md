@@ -15,7 +15,7 @@ Margaret fell for a phishing scam from a browser popup. Ultimately, she gave an 
 
 Listing the block devices, it looks like we’re mounted at **/media/root/INTELVOL**.
 
-```text
+```bash
 analyst@Remote-Access-Regret:~/Desktop/ChallengeFile$ lsblk
 
 NAME     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
@@ -40,7 +40,7 @@ sr0       11:0    1 1024M  0 rom
 
 Looking at Margaret’s AnyDesk configuration, we can see its ID.
 
-```text
+```bash
 analyst@Remote-Access-Regret:~/Desktop/ChallengeFile$ sudo cat /media/root/INTELVOL/Users/Margaret/AppData/Roaming/AnyDesk/system.conf
 
 [license]
@@ -67,7 +67,7 @@ access_control_list=
 
 Next, I copy out her local history—10 websites—and query the SQLite database through Python3. We can see the website leading to the scam.
 
-```text
+```python
 ('https://www.target.com/c/gift-cards/-/N-5xsxu', 'Gift Cards : Target', 13382752940000000)
 ('https://www.target.com/', 'Target : Expect More. Pay Less.', 13382752875000000)
 ('https://secure.bankofamerica.com/myaccounts/signin/signIn.go', 'Sign In - Bank of America', 13382751802000000)
@@ -88,7 +88,7 @@ The initial malicious domain to keep track of is `ww1.windows-security-alert.com
 
 The phone number can also be found through strings analysis:
 
-```text
+```bash
 analyst@Remote-Access-Regret:~/Desktop/ChallengeFile$ sudo grep -aERo '\+?1?[-. ()]*[0-9]{3}[-. ()]*[0-9]{3}[-. ]*[0-9]{4}' \
 >
 
@@ -129,7 +129,7 @@ intelvol.raw:-2084739842
 
 The attacker’s remote ID and alias, as well as some file transfers, can be found in Margaret’s AnyDesk artifacts. The session lasted for an hour, 7 minutes, and 32 seconds.
 
-```text
+```bash
 analyst@Remote-Access-Regret:~/Desktop/ChallengeFile$ sudo strings /media/root/INTELVOL/Users/Margaret/AppData/Roaming/AnyDesk/ad.trace | less
 
 info 2025/02/18 08:35:11.452 anydesk - AnyDesk starting
@@ -208,6 +208,6 @@ Clipboard activity:
 
 ## Resources
 
-- [https://help.hackthebox.com/en/articles/8570249-how-to-play-sherlocks](https://help.hackthebox.com/en/articles/8570249-how-to-play-sherlocks)
+- [https://www.inversecos.com/2021/02/forensic-analysis-of-anydesk-logs.html](https://www.inversecos.com/2021/02/forensic-analysis-of-anydesk-logs.html)
 - [https://support.anydesk.com/what-are-trace-files](https://support.anydesk.com/what-are-trace-files)
-- [https://docs.python.org/3/library/sqlite3.html](https://docs.python.org/3/library/sqlite3.html)
+- [https://www.inversecos.com/2021/02/forensic-analysis-of-anydesk-logs.html](https://www.inversecos.com/2021/02/forensic-analysis-of-anydesk-logs.html)
