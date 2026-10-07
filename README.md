@@ -14,6 +14,8 @@ by: Brandon Chaney
 
 Margaret fell for a phishing scam from a browser popup. Ultimately, she gave an unknown caller from the scam remote access to her computer and forwarded a lump sum in gift cards as payment, yikes 😓. I’m left with one file, `intelvol.raw`, on the system.
 
+> Using Chrome history and cache artifacts, malicious redirect analysis, scam-page recovery, and AnyDesk traces, this Sherlock demonstrates how browser and remote-access evidence can be correlated to reconstruct a tech support scam.
+
 ## Finding the mounted image
 
 Listing the block devices, it looks like we’re mounted at **/media/root/INTELVOL**.
