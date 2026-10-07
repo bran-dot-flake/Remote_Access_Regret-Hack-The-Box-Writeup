@@ -47,7 +47,7 @@ analyst@Remote-Access-Regret:~/Desktop/ChallengeFile$ sudo cat /media/root/INTEL
 key=
 
 [client]
-*id=847291503*
+**id=847291503**
 
 [user_interface]
 ; gui_language is unset, defaults to system language
@@ -82,7 +82,7 @@ Next, I copy out her local history—10 websites—and query the SQLite database
 
 We can also see a little bit of the attack chain: Margaret was looking for Thanksgiving recipes, then the scam alert appears, AnyDesk is downloaded, and we see banking and Target gift cards following. This matches the sequence we were given at the start.
 
-The initial malicious domain to keep track of is `ww1.windows-security-alert.com`.
+The initial malicious domain to keep track of is `ww1(.)windows-security-alert(.)com`.
 
 ## Finding the phone number
 
