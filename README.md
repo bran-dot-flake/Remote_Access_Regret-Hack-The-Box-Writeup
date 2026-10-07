@@ -2,8 +2,9 @@
 
 # Remote_Access_Regret - Hack The Box Sherlock
 
-![Hack The Box Sherlock](assets/platform-badge.svg)
-![Difficulty: Very Easy](assets/difficulty-badge.svg)
+![Hack The Box](https://img.shields.io/badge/Hack%20The%20Box-Sherlock-9FEF00?logo=hackthebox&logoColor=black)
+![Difficulty](https://img.shields.io/badge/Difficulty-Very%20Easy-6F42C1)
+![Category](https://img.shields.io/badge/Category-DFIR-F97316)
 
 by: Brandon Chaney
 
