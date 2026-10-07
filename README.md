@@ -1,6 +1,6 @@
 <img src="assets/sherlock-icon.png" alt="Sherlock icon" width="110" />
 
-# Remote_Access_Regret — Hack The Box Sherlock
+# Remote_Access_Regret - Hack The Box Sherlock
 
 ![Hack The Box Sherlock](assets/platform-badge.svg)
 ![Difficulty: Very Easy](assets/difficulty-badge.svg)
