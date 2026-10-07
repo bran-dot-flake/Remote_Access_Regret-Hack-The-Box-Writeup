@@ -6,6 +6,8 @@
 ![Difficulty](https://img.shields.io/badge/Difficulty-Very%20Easy-6F42C1)
 ![Category](https://img.shields.io/badge/Category-DFIR-F97316)
 
+*A digital forensics walkthrough analyzing Chrome artifacts, malicious redirects, cached scam content, and AnyDesk remote access activity.*
+
 by: Brandon Chaney
 
 ## Overview
