@@ -65,7 +65,7 @@ access_control_list=
 
 ## Chrome history
 
-Next, I copy out her local history—10 websites—and query the SQLite database through Python3. We can see the website leading to the scam.
+Next, I copy out her local history: 10 websites—and query the SQLite database through Python3. We can see the website leading to the scam.
 
 ```python
 ('https://www.target.com/c/gift-cards/-/N-5xsxu', 'Gift Cards : Target', 13382752940000000)
