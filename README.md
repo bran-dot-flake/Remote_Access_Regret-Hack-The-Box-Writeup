@@ -18,7 +18,7 @@ Margaret fell for a phishing scam from a browser popup. Ultimately, she gave an 
 
 ## Finding the mounted image
 
-Listing the block devices, it looks like we’re mounted at **/media/root/INTELVOL**.
+Listing the block devices, it looks like we’re mounted at `/media/root/INTELVOL`.
 
 ```bash
 analyst@Remote-Access-Regret:~/Desktop/ChallengeFile$ lsblk
