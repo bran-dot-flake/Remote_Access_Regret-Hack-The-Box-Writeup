@@ -210,4 +210,4 @@ Clipboard activity:
 
 - [https://www.inversecos.com/2021/02/forensic-analysis-of-anydesk-logs.html](https://www.inversecos.com/2021/02/forensic-analysis-of-anydesk-logs.html)
 - [https://support.anydesk.com/what-are-trace-files](https://support.anydesk.com/what-are-trace-files)
-- [https://www.inversecos.com/2021/02/forensic-analysis-of-anydesk-logs.html](https://www.inversecos.com/2021/02/forensic-analysis-of-anydesk-logs.html)
+- [https://www.w3schools.com/python/ref_module_sqlite3.asp](https://www.w3schools.com/python/ref_module_sqlite3.asp)
